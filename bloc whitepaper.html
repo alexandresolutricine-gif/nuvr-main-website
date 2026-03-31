@@ -1,0 +1,257 @@
+<style>
+  .wp-container { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    background: #0f172a; 
+    padding: 50px; 
+    border-radius: 12px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4); 
+    border: 1px solid rgba(255,255,255,0.05); 
+  }
+  .wp-section { 
+    margin-bottom: 60px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+    padding-bottom: 40px; 
+  }
+  .wp-section:last-child { 
+    border-bottom: none; 
+    margin-bottom: 20px; 
+  }
+  .wp-title { 
+    color: #ffd54a; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 22px; 
+    font-weight: 700; 
+    margin-bottom: 20px; 
+  }
+  .wp-subtitle { 
+    color: #ffd54a; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px; 
+    font-weight: 700; 
+    margin: 25px 0 15px 0; 
+    opacity: 0.9; 
+  }
+  .wp-text { 
+    color: #cbd5e1; 
+    font-size: 15px; 
+    line-height: 1.8; 
+    margin: 0 0 20px 0; 
+    text-align: justify; 
+  }
+  .wp-list { 
+    color: #cbd5e1; 
+    font-size: 15px; 
+    line-height: 1.8; 
+    margin-bottom: 20px; 
+    padding-left: 20px; 
+  }
+  .wp-list li { 
+    margin-bottom: 10px; 
+  }
+  table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 30px; 
+    font-size: 14px; 
+    color: #cbd5e1; 
+  }
+  th, td { 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    padding: 12px; 
+    text-align: left; 
+  }
+  th { 
+    background-color: rgba(255, 213, 74, 0.1); 
+    color: #ffd54a; 
+  }
+  
+  /* Style du bouton de téléchargement en Or */
+  .btn-coin {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffec85 0%, #ffd54a 50%, #ffc107 100%);
+    color: #0f172a !important;
+    padding: 18px 50px;
+    font-weight: bold;
+    border-radius: 50px; 
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #f6c429;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3), inset 0 2px 2px rgba(255,255,255,0.5), inset 0 -2px 2px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+    text-align: center;
+  }
+  
+  .btn-coin:hover {
+    transform: scale(1.03) translateY(-3px);
+    background: linear-gradient(135deg, #fff3b0 0%, #ffca28 50%, #ffb300 100%);
+    animation: gold-glow-coin 1.5s infinite alternate;
+  }
+
+  @keyframes gold-glow-coin {
+    0% { box-shadow: 0 0 15px #ffd54a, 0 4px 15px rgba(0,0,0,0.3); }
+    50% { box-shadow: 0 0 35px #ffea00, 0 4px 15px rgba(0,0,0,0.3); }
+    100% { box-shadow: 0 0 18px #ffd54a, 0 4px 15px rgba(0,0,0,0.3); }
+  }
+
+  .btn-coin::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #ffea00 0%, #ffd54a 60%, transparent 75%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+
+  .btn-coin:active::after {
+    animation: gold-blast-coin 0.6s ease-out;
+  }
+
+  @keyframes gold-blast-coin {
+    0% { width: 10px; height: 10px; opacity: 1; }
+    100% { width: 800px; height: 800px; opacity: 0; }
+  }
+</style>
+
+<div class="wp-container" style="font-family: 'Open Sans', sans-serif; color: #f1f5f9;">
+    
+    <div style="text-align: center; margin-bottom: 55px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 35px;">
+      <a href="whitepaper.pdf" target="_blank" class="btn-coin">
+        TÉLÉCHARGER LE LIVRE BLANC (PDF)
+      </a>
+      <p style="color: #64748b; font-size: 12px; margin-top: 18px;">Maintenez le clic pour déclencher l'onde de choc dorée !</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">1. Vision</div>
+      <p class="wp-text">NUMISVR vise à transformer le marché mondial de la numismatique — un secteur générant plus de 10 milliards de dollars de chiffre d'affaires annuel — en le rendant plus accessible, transparent et sécurisé grâce à la technologie blockchain.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">2. Le Défi</div>
+      <p class="wp-text">Le marché traditionnel des pièces de collection est réputé pour son opacité et ses barrières à l'entrée élevées. En utilisant la technologie blockchain, nous tokenisons ces pièces pour faciliter leur accessibilité. L'objectif ici est de démocratiser l'accès et l'utilisation d'objets de collection.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">3. Solution</div>
+      <p class="wp-text">NUMISVR utilise les standards SPL / Solana pour créer un jeton utilitaire, NUVR, exclusivement conçu pour donner accès à des fonctionnalités numériques sur notre plateforme immersive : navigation virtuelle, musée 3D et services associés à la collection numismatique. NUVR n'est ni une action, ni une dette, ni un produit d'investissement collectif.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">4. Fonctionnement</div>
+      <p class="wp-text">La plateforme permet l'échange et la vente de jetons donnant droit à des expériences numériques. L'authentification des pièces est garantie, mais la détention de NUVR ne donne pas de droit de propriété ou de droit sur la gestion des pièces de collection sous-jacentes. Les NFT créés par la suite rempliront cette fonction spécifique.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">5. Spécifications techniques, création de valeur et utilité du réseau</div>
+      <p class="wp-text">NUVR est un jeton d'utilité conçu pour servir de clé d'accès principale à nos services numériques (place de marché, musée virtuel, contenu exclusif, gamification et fonctionnalités avancées).</p>
+      <div class="wp-subtitle">Création de valeur et utilité du réseau :</div>
+      <p class="wp-text">Le jeton NUVR n'est pas un titre de propriété, mais le vecteur exclusif de règlement et d'accès au sein de l'écosystème NUMISVR. Sa valeur économique repose sur un modèle d'utilité circulaire : l'obligation d'utiliser NUVR pour acquérir des NFT fractionnés, régler les frais de réseau et débloquer des services premium (tels que des expertises certifiées, une assurance on-chain et une modélisation 3D haute fidélité) crée une corrélation directe entre la croissance du volume de transactions de la plateforme et la demande organique, ainsi que la vélocité du jeton.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">6. Sécurité</div>
+      <p class="wp-text">Des audits de contrats inteligentes garantissent l'absence de vulnérabilités. Le stockage physique des pièces de collection est situé en Suisse pour garantir l'exclusivité des expositions numériques.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">7. Risques et déclaration MiCA / Howey</div>
+      <p class="wp-text">NUVR peut perdre toute sa valeur, n'est pas garanti et ne peut être assimilé à une valeur mobilière ou à un actif financier. Il n'existe aucune compensation ou protection pour le capital investi. Un délai de réflexion (rétractation) de 14 jours pour les clients de détail s'applique conformément à la réglementation MiCA.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">8. Comment nous opérons : La Plateforme</div>
+      <p class="wp-text">Objectif : Permettre l'échange, l'achat et la vente de jetons correspondant à des pièces de collection numismatiques sur une plateforme décentralisée et sécurisée.</p>
+      <p class="wp-text">Fractionnement via Master NFT et Vault : Chaque pièce numismatique est représentée par un Master NFT qui incarne 100% de la propriété numérique de l'actif. Ce Master NFT peut se trouver dans l'un des deux états suivants :</p>
+      <ul class="wp-list">
+        <li>État A - Master Libre : Le NFT est uniquement transférable — aucune fraction n'existe.</li>
+        <li>État B - Master Verrouillé : Le NFT est déposé dans le Vault (contrat intelligent), qui émet alors un nombre fixe et immuable de fractions SPL / Solana représentant la même pièce.</li>
+      </ul>
+      <p class="wp-text">Un invariant technique strict garantit qu'à tout moment, seule l'une de ces situations est possible : Si le Master NFT est détenu en totalité par quelqu'un, alors aucune fraction de cette pièce n'existe sur le marché. Si des fractions de la pièce sont en circulation sur le marché, alors le Master NFT est obligatoirement enfermé et verrouillé dans le coffre-fort numérique.</p>
+      
+      <div class="wp-subtitle">La gouvernance du système repose sur :</div>
+      <ul class="wp-list">
+        <li>Un multi-sig pour les rôles administratifs,</li>
+        <li>Un plafond immuable de fractions par pièce,</li>
+        <li>Un mode pause en cas d'incident,</li>
+        <li>Des événements on-chain détaillés pour l'audit et la transparence.</li>
+      </ul>
+
+      <div class="wp-subtitle">1. Design & Architecture :</div>
+      <p class="wp-text">Définir l'UX/UI : Développement de l'ergonomie (navigation, fiches détaillées des pièces, gestion du portefeuille, etc.).</p>
+      <p class="wp-text">Sécurité : Mise en œuvre de protocoles avancés pour la protection des transactions et des données utilisateurs.</p>
+
+      <div class="wp-subtitle">2. Développement Technique :</div>
+      <p class="wp-text">Développement back-end : Programmation de la logique de marché, gestion des offres/enchères.</p>
+      <p class="wp-text">Intégrations KYC/AML : Ajout des modules de vérification d'identité et de lutte contre le blanchiment d'argent.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">9. Tokenomics et Vesting</div>
+      <p class="wp-text">Le jeton NUMISVR présente les spécifications suivantes : Standard SPL / Solana. Offre totale : 1 Milliard. Prix public : 0,06 $.</p>
+      
+      <div class="wp-subtitle">Répartition Globale des Jetons :</div>
+      <table>
+        <thead>
+          <tr><th>Catégorie</th><th>Volume de Jetons</th><th>Pourcentage (%)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Marketing</td><td>280 Millions</td><td>28%</td></tr>
+          <tr><td>Participants Initiaux (Investisseurs Précoces)</td><td>200 Millions</td><td>20%</td></tr>
+          <tr><td>Équipe</td><td>150 Millions</td><td>15%</td></tr>
+          <tr><td>Récompenses Écosystème</td><td>100 Millions</td><td>10%</td></tr>
+          <tr><td>Acquisition de Pièces</td><td>100 Millions</td><td>10%</td></tr>
+          <tr><td>Trésorerie</td><td>100 Millions</td><td>10%</td></tr>
+          <tr><td>Vente Publique</td><td>50 Millions</td><td>5%</td></tr>
+          <tr><td>Conseillers</td><td>20 Millions</td><td>2%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">10. Feuille de Route & Jalons</div>
+      <p class="wp-text"><strong>Phase 1 : Fondations (T3 2025)</strong><br>Lancement du site présentant l'équipe, la vision et la feuille de route. Création de l'identité graphique et du branding du projet.</p>
+      <p class="wp-text"><strong>Phase 2 : Prévente (Seeds & Early Access) (T1-T4 2026)</strong><br>Ouverture de la phase de financement initiale (Seed) réservée aux entreprises et fonds spécialisés dans le Web3.</p>
+      <p class="wp-text"><strong>Phase 3 : Lancement de l'ICO (T2 2026 - T4 2026)</strong><br>Lancement officiel de la prévente publique du jeton $NUVR au prix de 0,02 $. Mise en place d'un processus KYC léger ("Light KYC").</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">11. Conseillers</div>
+      <p class="wp-text">Notre projet s'appuie sur un réseau stratégique de conseillers reconnus dans les domaines de la numismatique, de la blockchain, de la finance et de la réglementation.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">12. Sécurité et Audit</div>
+      <ul class="wp-list">
+        <li>Audit de Contrat Intelligent : Nos contrats sont audités par des firmes de sécurité Web3 de premier plan.</li>
+        <li>Stockage des pièces : Protégées en Suisse dans les Ports Francs de Genève.</li>
+      </ul>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">13. L'Avenir</div>
+      <p class="wp-text">Créez votre propre musée universel. Nos NFT sont totalement compatibles avec les applications de réalité virtuelle.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">14. Structure juridique de NUMISVR Avant et Après l'ICO</div>
+      <p class="wp-text"><strong>Avant et pendant l'ICO :</strong> Gérée par l'entité dédiée Numisvr-ico limited, basée aux British Virgin Islands.</p>
+      <p class="wp-text"><strong>Après l'ICO :</strong> Structure double avec une entité en Estonie pour la partie numérique (licence VASP) et une entité en Suisse pour la gestion physique aux Ports Francs de Genève.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">15. Clause de non-responsabilité</div>
+      <p class="wp-text">L'achat ou la détention de NUVR est spéculatif. Aucune partie de ce livre blanc ne constitue un conseil financier, juridique ou fiscal. Les acheteurs peuvent se rétracter dans un délai de 14 jours calendaires conformément aux règles MiCA.</p>
+    </div>
+
+</div>
