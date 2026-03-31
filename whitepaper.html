@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="fr-FR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livre Blanc Officiel | NumisVR</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="whitepapaer.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Roboto:wght@400;700&amp;family=Open+Sans:wght@400;600;700">
+    <meta name="theme-color" content="#1a2333">
+  </head>
+  <body class="u-body u-clearfix" style="background-color: #1a2333; color: #f1f5f9; font-family: 'Open Sans', sans-serif; margin: 0;">
+    
+    <header class="u-clearfix u-header" style="background-color: #0f172a; padding: 20px 0; border-bottom: 2px solid #ffd54a;">
+      <div class="u-sheet u-valign-middle" style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 15px; max-width: 1140px; margin: 0 auto; padding: 0 20px;">
+        
+        <h1 style="color: #ffd54a; font-size: 24px; margin: 0; font-family: 'Roboto', sans-serif; font-weight: 700; text-align: center;">LIVRE BLANC NUMISVR</h1>
+        
+        <div style="display: flex; gap: 20px; align-items: center;">
+          
+          <a href="whitepaper.html" title="Français" style="display: block; width: 45px; height: 30px; border-radius: 4px; overflow: hidden; border: 2px solid #ffd54a; box-shadow: 0 0 10px #ffd54a; transition: all 0.3s ease;">
+              <img src="https://flagcdn.com/w80/fr.png" alt="Français" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </a>
+          
+          <a href="whitepaper-en.html" title="English" style="display: block; width: 45px; height: 30px; border-radius: 4px; overflow: hidden; border: 1px solid rgba(255,255,255,0.2); opacity: 0.6; transition: all 0.3s ease;">
+              <img src="https://flagcdn.com/w80/us.png" alt="English" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          </a>
+          
+        </div>
+      </div>
+    </header>
+
+    <style>
+      .wp-container { max-width: 1000px; margin: 0 auto; background: #0f172a; padding: 50px; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.05); }
+      .wp-section { margin-bottom: 60px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding-bottom: 40px; }
+      .wp-section:last-child { border-bottom: none; margin-bottom: 20px; }
+      .wp-title { color: #ffd54a; font-family: 'Roboto', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 20px; }
+      .wp-subtitle { color: #ffd54a; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 700; margin: 25px 0 15px 0; opacity: 0.9; }
+      .wp-text { color: #cbd5e1; font-size: 15px; line-height: 1.8; margin: 0 0 20px 0; text-align: justify; }
+      .wp-list { color: #cbd5e1; font-size: 15px; line-height: 1.8; margin-bottom: 20px; padding-left: 20px; }
+      .wp-list li { margin-bottom: 10px; }
+      table { width: 100%; border-collapse: collapse; margin-bottom: 30px; font-size: 14px; color: #cbd5e1; }
+      th, td { border: 1px solid rgba(255, 255, 255, 0.1); padding: 12px; text-align: left; }
+      th { background-color: rgba(255, 213, 74, 0.1); color: #ffd54a; }
+      
+      .btn-coin {
+        display: inline-block;
+        background: linear-gradient(135deg, #ffec85 0%, #ffd54a 50%, #ffc107 100%);
+        color: #0f172a !important;
+        padding: 18px 50px;
+        font-weight: bold;
+        border-radius: 50px; 
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 3px solid #f6c429;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3), inset 0 2px 2px rgba(255,255,255,0.5), inset 0 -2px 2px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
+        overflow: visible;
+        text-align: center;
+      }
+      
+      .btn-coin:hover {
+        transform: scale(1.03) translateY(-3px);
+        background: linear-gradient(135deg, #fff3b0 0%, #ffca28 50%, #ffb300 100%);
+        animation: gold-glow-coin 1.5s infinite alternate;
+      }
+
+      @keyframes gold-glow-coin {
+        0% { box-shadow: 0 0 15px #ffd54a, 0 4px 15px rgba(0,0,0,0.3); }
+        50% { box-shadow: 0 0 35px #ffea00, 0 4px 15px rgba(0,0,0,0.3); }
+        100% { box-shadow: 0 0 18px #ffd54a, 0 4px 15px rgba(0,0,0,0.3); }
+      }
+
+      .btn-coin::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        background: radial-gradient(circle, #ffea00 0%, #ffd54a 60%, transparent 75%);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+      }
+
+      .btn-coin:active::after {
+        animation: gold-blast-coin 0.6s ease-out;
+      }
+
+      @keyframes gold-blast-coin {
+        0% { width: 10px; height: 10px; opacity: 1; }
+        100% { width: 800px; height: 800px; opacity: 0; }
+      }
+    </style>
+
+    <section class="u-clearfix" style="padding: 50px 20px;">
+      <div class="wp-container">
+        
+        <div style="text-align: center; margin-bottom: 55px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 35px;">
+          <a href="whitepaper.pdf" target="_blank" class="btn-coin">
+            TÉLÉCHARGER LE LIVRE BLANC
+          </a>
+          <p style="color: #64748b; font-size: 12px; margin-top: 18px;">Maintenez le clic pour déclencher l'onde de choc dorée !</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">1. Vision</div>
+          <p class="wp-text">NumisVR vise à transformer le marché mondial de la numismatique — un secteur générant plus de 10 milliards de dollars de chiffre d'affaires annuel — en le rendant plus accessible, transparent et sécurisé grâce à la technologie blockchain.</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">2. Le Défi</div>
+          <p class="wp-text">Le marché traditionnel des pièces de collection est réputé pour son opacité et ses barrières à l'entrée élevées. En utilisant la technologie blockchain, nous tokenisons ces pièces pour faciliter leur accessibilité. L'objectif ici est de démocratiser l'accès et l'utilisation d'objets de collection.</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">3. Solution</div>
+          <p class="wp-text">NumisVR utilise les standards SPL / Solana pour créer un jeton utilitaire, NUVR, exclusivement conçu pour donner accès à des fonctionnalités numériques sur notre plateforme immersive : navigation virtuelle, musée 3D et services associés à la collection numismatique. NUVR n'est ni une action, ni une dette, ni un produit d'investissement collectif.</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">4. Fonctionnement</div>
+          <p class="wp-text">La plateforme permet l'échange et la vente de jetons donnant droit à des expériences numériques. L'authentification des pièces est garantie, mais la détention de NUVR ne donne pas de droit de propriété ou de droit sur la gestion des pièces de collection sous-jacentes. Les NFT créés par la suite rempliront cette fonction spécifique.</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">5. Spécifications techniques, création de valeur et utilité du réseau</div>
+          <p class="wp-text">NUVR est un jeton d'utilité conçu pour servir de clé d'accès principale à nos services numériques (place de marché, musée virtuel, contenu exclusif, gamification et fonctionnalités avancées).</p>
+          <div class="wp-subtitle">Création de valeur et utilité du réseau :</div>
+          <p class="wp-text">Le jeton NUVR n'est pas un titre de propriété, mais le vecteur exclusif de règlement et d'accès au sein de l'écosystème NumisVR. Sa valeur économique repose sur un modèle d'utilité circulaire : l'obligation d'utiliser NUVR pour acquérir des NFT fractionnés, régler les frais de réseau et débloquer des services premium (tels que des expertises certifiées, une assurance on-chain et une modélisation 3D haute fidélité) crée une corrélation directe entre la croissance du volume de transactions de la plateforme et la demande organique, ainsi que la vélocité du jeton.</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">6. Sécurité</div>
+          <p class="wp-text">Des audits de contrats intelligents garantissent l'absence de vulnérabilités. Le stockage physique des pièces de collection est situé en Suisse pour garantir l'exclusivité des expositions numériques.</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">7. Risques et déclaration MiCA / Howey</div>
+          <p class="wp-text">NUVR peut perdre toute sa valeur, n'est pas garanti et ne peut être assimilé à une valeur mobilière ou à un actif financier. Il n'existe aucune compensation ou protection pour le capital investi. Un délai de réflexion (rétractation) de 14 jours pour les clients de détail s'applique conformément à la réglementation MiCA.</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">8. Comment nous opérons : La Plateforme</div>
+          <p class="wp-text">Objectif : Permettre l'échange, l'achat et la vente de jetons correspondant à des pièces de collection numismatiques sur une plateforme décentralisée et sécurisée.</p>
+          <p class="wp-text">Fractionnement via Master NFT et Vault : Chaque pièce numismatique est représentée par un Master NFT qui incarne 100% de la propriété numérique de l'actif. Ce Master NFT peut se trouver dans l'un des deux états suivants :</p>
+          <ul class="wp-list">
+            <li>État A - Master Libre : Le NFT est uniquement transférable — aucune fraction n'existe.</li>
+            <li>État B - Master Verrouillé : Le NFT est déposé dans le Vault (contrat intelligent), qui émet alors un nombre fixe et immuable de fractions SPL / Solana représentant la même pièce.</li>
+          </ul>
+          <p class="wp-text">Un invariant technique strict garantit qu'à tout moment, seule l'une de ces situations est possible : Si le Master NFT est détenu en totalité par quelqu'un, alors aucune fraction de cette pièce n'existe sur le marché. Si des fractions de la pièce sont en circulation sur le marché, alors le Master NFT est obligatoirement enfermé et verrouillé dans le coffre-fort numérique.</p>
+          <p class="wp-text">Le défractionnement (redeem) est possible lorsqu'un investisseur réunit 100% des fractions ; il peut les brûler pour libérer le Master NFT, qui lui est alors restitué. Ce mécanisme empêche toute double représentation d'une même pièce et offre une traçabilité on-chain complète. Les métadonnées (photos, certificats, empreintes de documents juridiques éventuels) sont stockées via IPFS/Arweave et figées après émission pour garantir leur immuabilité.</p>
+          
+          <div class="wp-subtitle">La gouvernance du système repose sur :</div>
+          <ul class="wp-list">
+            <li>Un multi-sig pour les rôles administratifs,</li>
+            <li>Un plafond immuable de fractions par pièce,</li>
+            <li>Un mode pause en cas d'incident,</li>
+            <li>Des événements on-chain détaillés pour l'audit et la transparence.</li>
+          </ul>
+
+          <div class="wp-subtitle">1. Design & Architecture :</div>
+          <p class="wp-text">Définir l'UX/UI : Développement de l'ergonomie (navigation, fiches détaillées des pièces, gestion du portefeuille, suivi des transactions, filtres par époque, pays, rareté, etc.).</p>
+          <p class="wp-text">Sécurité : Mise en œuvre de protocoles avancés pour la protection des transactions et des données utilisateurs (chiffrement, authentification forte, gestion des accès).</p>
+          <p class="wp-text">Interopérabilité : Prévoir la compatibilité avec les portefeuilles crypto courants et l'intégration des standards de jetons (SPL / Solana).</p>
+
+          <div class="wp-subtitle">2. Développement Technique :</div>
+          <p class="wp-text">Développement back-end : Programmation de la logique de marché, gestion des offres/enchères, moteur de paiement, système d'alerte/préférence.</p>
+          <p class="wp-text">Développement front-end : Création des pages interactives pour la navigation, les dépôts/retraits, la présentation des pièces tokenisées.</p>
+          <p class="wp-text">Intégrations KYC/AML : Ajout des modules de vérification d'identité et de lutte contre le blanchiment d'argent pour garantir la conformité.</p>
+
+          <div class="wp-subtitle">3. Sécurisation & Tests :</div>
+          <p class="wp-text">Audit de sécurité : Réalisation d'audits externes de la place de marché et de ses contrats intelligents par des firmes de sécurité Web3 de premier plan.</p>
+          <p class="wp-text">Bêta-test fermé : Ouverture à un groupe restreint de collectionneurs et d'investisseurs pour des tests de charge et des retours sur l'expérience utilisateur.</p>
+          <p class="wp-text">Correction des bugs : Prise en compte des retours pour corriger d'éventuels dysfonctionnements ou failles.</p>
+
+          <div class="wp-subtitle">4. Déploiement & Communication :</div>
+          <p class="wp-text">Ouverture publique officielle : Annonce sur tous les canaux officiels, guides d'utilisation et support client dédié lors du lancement.</p>
+          <p class="wp-text">Programme d'incitation : Mise en place de réductions, récompenses ou avantages pour les premières inscriptions et les vendeurs.</p>
+          <p class="wp-text">Tableau de bord transparent : Publication en temps réel des volumes d'échange et des mises à jour.</p>
+
+          <div class="wp-subtitle">5. Suivi & Amélioration Continue :</div>
+          <p class="wp-text">Collecte des retours : Mise en place de formulaires et de sessions en direct pour recueillir les suggestions des utilisateurs.</p>
+          <p class="wp-text">Mises à jour régulières : Déploiement de nouvelles fonctionnalités en réponse aux besoins du marché (enchères, ventes en gros, catégories spéciales, etc.).</p>
+          <p class="wp-text">Renforcement de la conformité : Veille réglementaire et adaptation continue des procédures.</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">9. Tokenomics et Vesting</div>
+          <p class="wp-text">Le jeton NUMISVR présente les spécifications suivantes : Standard SPL / Solana. Le choix du standard SPL / Solana s'avère stratégique pour plusieurs raisons : interopérabilité (compatibilité avec tous les portefeuilles et plateformes prenant en charge Solana), liquidité accrue et sécurité éprouvée. Offre totale : 1 Milliard. Prix public : 0,06 $.</p>
+          
+          <div class="wp-subtitle">Répartition Globale des Jetons :</div>
+          <table>
+            <thead>
+              <tr><th>Catégorie</th><th>Volume de Jetons</th><th>Pourcentage (%)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Marketing</td><td>280 Millions</td><td>28%</td></tr>
+              <tr><td>Participants Initiaux (Investisseurs Précoces)</td><td>200 Millions</td><td>20%</td></tr>
+              <tr><td>Équipe</td><td>150 Millions</td><td>15%</td></tr>
+              <tr><td>Récompenses Éco. (Récompenses Écosystème)</td><td>100 Millions</td><td>10%</td></tr>
+              <tr><td>Acqui. Pièces (Acquisition de Pièces)</td><td>100 Millions</td><td>10%</td></tr>
+              <tr><td>Trésorerie</td><td>100 Millions</td><td>10%</td></tr>
+              <tr><td>Vente Publique</td><td>50 Millions</td><td>5%</td></tr>
+              <tr><td>Conseillers</td><td>20 Millions</td><td>2%</td></tr>
+            </tbody>
+          </table>
+          
+          <div class="wp-subtitle">Phases Clés de Vesting :</div>
+          <p class="wp-text"><strong>Phase 1 (Mois 1 à 3) :</strong> Lancement initial. Libération complète des 50M de la Vente Publique. Début des allocations de Trésorerie et des Acquisitions de Pièces.</p>
+          <p class="wp-text"><strong>Phase 2 (Mois 4 à 17) :</strong> Développement. Début du déblocage pour les Conseillers, le Marketing et les Récompenses. Début de la distribution aux investisseurs précoces au Mois 7.</p>
+          <p class="wp-text"><strong>Phase 3 (Mois 18 à 36) :</strong> Distribution complète. Début du déblocage pour l'Équipe. Toutes les catégories atteignent leur plafond total à la fin du 36ème mois.</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">10. Feuille de Route & Jalons</div>
+          
+          <p class="wp-text"><strong>Phase 1 : Fondations (T3 2025)</strong><br>
+          Lancement du site officiel et création de marque : Lancement du site présentant l'équipe, la vision et la feuille de route. Création de l'identité graphique et du branding du projet. Animation communautaire : Ouverture et gestion des canaux officiels sur X (Twitter), Telegram et Discord. Mise en place des premiers échanges communautaires, FAQ et newsletters. Documentation et transparence : Publication du Livre Blanc (Whitepaper) et de la documentation technique détaillée.</p>
+          
+          <p class="wp-text"><strong>Phase 2 : Prévente (Seeds & Early Access) (T1-T4 2026)</strong><br>
+          Déploiement de la prévente (Seed) : Ouverture de la phase de financement initiale (Seed) réservée aux entreprises et fonds d'investissement spécialisés dans la crypto-monnaie et le Web3. Sélection des premiers partenaires et ambassadeurs : Recrutement d'ambassadeurs influents dans la communauté numismatique pour porter la voix du projet. Partenariats stratégiques : Formation de collaborations solides avec des experts, des institutions numismatiques reconnues et des entreprises leaders du secteur blockchain.</p>
+          
+          <p class="wp-text"><strong>Phase 3 : Lancement de l'ICO (T2 2026 - T4 2026)</strong><br>
+          Début de la prévente des jetons : Lancement officiel de la prévente publique du jeton $NUVR au prix de 0,02 $ (payable en USDT sur Solana) pour le premier palier de 8 millions de jetons. Déploiement sur des plateformes de lancement reconnues (comme ICOdrops). Évolution dynamique du prix en fonction du volume d'achat global, avec l'intégration d'une jauge graphique pour suivre le prix du jeton en temps réel. Déploiement des fonctionnalités : Lancement des premiers outils pour les utilisateurs. Système de création de compte utilisateur connecté directement au portefeuille, affichant l'allocation de jetons $NUVR correspondante sur la blockchain Solana. Mise en place d'un processus KYC léger ("Light KYC"), strictement adapté à la conformité réglementaire pour les jetons utilitaires. Déploiement continu et animation des réseaux sociaux communautaires. Tests et retours : Collecte active des retours de la communauté pour des itérations rapides et des corrections d'interface.</p>
+          
+          <p class="wp-text"><strong>Phase 4 : Expansion de l'Écosystème (T4 2026 - T1 2027)</strong><br>
+          Lancement du TGE (Token Generation Event) : Date officielle de lancement du TGE : 1er décembre 2026. Note d'accélération : Si tous les jetons alloués sont vendus avant cette échéance, la date du TGE sera avancée en conséquence. Lancement du Marketplace : Déploiement d'une plateforme dédiée aux pièces numismatiques tokenisées avec une interface utilisateur (UX/UI) optimisée. Concept hybride novateur : Une place de marché mixant les fonctionnalités fluides d'OpenSea avec le modèle de fractionnement d'actifs réels (RWA) popularisé par RealT. Interopérabilité totale avec les portefeuilles crypto de l'écosystème Solana (standard SPL) et intégration des protocoles de sécurité avancés. Ouverture au Marché : Lancement des procédures d'inscription du jeton sur les principales bourses centralisées (CEX) et décentralisées (DEX). Mise à disposition de solutions d'intégration (API et SDK) pour les partenaires spécialisés du secteur. Intégrations de projets partenaires : Établissement de relations et de partenariats avec des compagnies d'assurance, des transporteurs logistiques sécurisés et des cabinets d'expertise numismatique. Déploiement de services complémentaires directement accessibles : assurance des pièces physiques, stockage ultra-sécurisé (ports francs) et modules d'expertise à distance. Ancrage institutionnel : Création d'une société dédiée basée à Genève, avec des bureaux administratifs et d'exploitation situés directement au sein des Ports Francs de Genève, pour une gestion optimale et sécurisée des pièces de collection. Campagnes internationales : Amplification des efforts de marketing à l'échelle mondiale (avec un focus particulier sur les USA et l'Asie) et organisation d'événements physiques locaux.</p>
+          
+          <p class="wp-text"><strong>Phase 5 : Consolidation & Nouveaux Services (T1 2027 - T3 2027)</strong><br>
+          Création de NFT Numismatics VR : Développement et émission de NFT compatibles avec les casques et lunettes de Réalité Virtuelle (VR). Ces NFT permettront aux détenteurs d'admirer une représentation 3D ultra-réaliste et interactive de leur pièce de collection. Développement d'un musée virtuel immersif : Création d'un espace immersif complet pour exposer les pièces tokenisées. Navigation VR fluide avec salles thématiques, modélisations 3D poussées et visites interactives. Certification transparente on-chain grâce aux NFT pour garantir l'authenticité et la traçabilité complète de chaque œuvre présentée. Déploiement d'espaces privés exclusifs réservés aux grands collectionneurs et de zones publiques dédiées à la découverte. Gestion optimisée et scalable : Mise en place d'un marché secondaire interne performant, gestion de la copropriété fractionnée et outils de reporting automatisés. Suivi juridique et veille de conformité continue pour des adaptations réglementaires rapides. Support communautaire et innovation : Mise en place d'un service client haut de gamme multilingue, organisation d'activités éducatives autour de la numismatique et de concours. Évolution continue de la Feuille de Route en fonction des retours directs des utilisateurs et de l'analyse approfondie du marché. Évaluation et prochaines étapes : Publication d'un rapport d'avancement détaillé et préparation des nouvelles phases de développement de l'écosystème. Ouverture stratégique du modèle économique à d'autres catégories d'objets de collection et de nouvelles classes d'actifs réels (RWA).</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">11. Conseillers</div>
+          <p class="wp-text">Notre projet s'appuie sur un réseau stratégique de conseillers reconnus dans les domaines de la numismatique, de la blockchain, de la finance et de la réglementation.</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">12. Sécurité et Audit</div>
+          <ul class="wp-list">
+            <li>Audit de Contrat Intelligent : Nos contrats intelligents sont audités par des firmes de sécurité Web3 de premier plan et reconnues internationalement, garantissant l'absence de vulnérabilités critiques et une stricte conformité aux plus hauts standards de l'industrie.</li>
+            <li>Stockage des pièces : Grâce à la neutralité de la Suisse, les pièces stockées dans les Ports Francs et Entrepôts de Genève sont protégées contre les risques de faillite ou de saisie.</li>
+            <li>Audits renouvelés des pièces : Un expert numismatique est mandaté à chaque période renouvelée pour procéder à la réévaluation de la collection complète.</li>
+          </ul>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">13. L'Avenir</div>
+          <p class="wp-text">Créez votre propre musée universel. Nos NFT sont totalement compatibles avec les applications de réalité virtuelle : intégrez vos œuvres au sein de votre propre musée 3D via le processus NFT VR.</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">14. Structure juridique de NUMISVR Avant et Après l'ICO</div>
+          <p class="wp-text">Pour garantir la transparence, la conformité réglementaire et un service optimal à nos clients, NUMISVR opère via une stratégie juridique calculée en deux temps :</p>
+          
+          <p class="wp-text"><strong>Avant et pendant l'ICO (Phase de levée de fonds) :</strong><br>
+          Entité dédiée à l'ICO : Une structure juridique spécifique a été créée pour gérer strictement l'ICO et la distribution des jetons. Cela permet au projet de se conformer aux normes actuelles de levée de fonds tout en évitant des contraintes opérationnelles inutiles. Nom de l'entreprise : Numisvr-ico limited. Numéro d'entreprise : 2183122. Adresse enregistrée : Quijano Chambers, P.O. box 3159, Road Town, Tortola, British Virgin Islands. Contact & Renseignements : admin@numisvr.com</p>
+          
+          <p class="wp-text"><strong>Après l'ICO (Phase opérationnelle - Structure duelle) :</strong><br>
+          Une fois l'ICO terminée, le projet passera à une structure d'entreprise double pour séparer les services numériques de la gestion des actifs physiques : Couche 1 (Le Numérique) : Création d'une structure juridique en Estonie avec l'obtention d'une licence financière (VASP) pour garantir les échanges de NFT en accord avec les lois actuelles dans toute l'Europe. Couche 2 (Le Physique) : Création d'une structure juridique en Suisse pour la gestion du coffre-fort sécurisé et des bureaux administratifs directement situés au sein des Ports Francs de Genève.</p>
+        </div>
+
+        <div class="wp-section">
+          <div class="wp-title">15. Clause de non-responsabilité</div>
+          <p class="wp-text">L'achat ou la détention de NUVR est spéculatif par nature et ne doit être envisagé que par des personnes comprenant pleinement les risques encourus, y compris celui de perte totale. Aucune partie de ce livre blanc ne constitue un conseil financier, juridique ou fiscal. Le site web et les plateformes associées mettront en œuvre des mesures techniques (filtrage IP, restrictions KYC) adaptées aux accès régionaux pour bloquer l'accès aux résidents de territoires interdits le cas échéant. Les acheteurs peuvent se rétracter dans un délai de 14 jours calendaires conformément aux règles applicables du règlement MiCA.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; color: #94a3b8; font-size: 14px; border-top: 1px solid rgba(255, 213, 74, 0.1); background-color: #0f172a;">
+      <p style="margin: 0;">© 2026 NumisVR — admin@numisvr.com</p>
+    </footer>
+
+  </body>
+</html>
