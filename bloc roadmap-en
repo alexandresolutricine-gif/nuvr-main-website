@@ -1,0 +1,143 @@
+<style>
+  .wp-container { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    background: #0f172a; 
+    padding: 50px; 
+    border-radius: 12px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4); 
+    border: 1px solid rgba(255,255,255,0.05); 
+  }
+  .wp-section { 
+    margin-bottom: 40px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+    padding-bottom: 30px; 
+  }
+  .wp-section:last-child { 
+    border-bottom: none; 
+    margin-bottom: 0; 
+  }
+  .wp-title { 
+    color: #ffd54a; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 22px; 
+    font-weight: 700; 
+    margin-bottom: 15px; 
+  }
+  .wp-text { 
+    color: #cbd5e1; 
+    font-size: 15px; 
+    line-height: 1.8; 
+    margin-bottom: 15px; 
+  }
+  .wp-list { 
+    color: #cbd5e1; 
+    font-size: 15px; 
+    line-height: 1.8; 
+    margin-bottom: 15px; 
+    padding-left: 20px; 
+  }
+  .wp-list li { 
+    margin-bottom: 8px; 
+  }
+</style>
+
+<div class="wp-container" style="font-family: 'Open Sans', sans-serif; color: #f1f5f9;">
+    
+    <div class="wp-section" style="text-align: center;">
+      <p class="wp-text" style="text-align: center; font-size: 16px;">The NUMISVR project adopts a phased deployment strategy, aiming for security, scalability, and progressive adoption of numismatic coin tokenization, with clear steps and tangible benefits at each milestone.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">Phase 1: Foundations (Q3 2025)</div>
+      <p class="wp-text"><strong>Official website launch and brand building:</strong></p>
+      <ul class="wp-list">
+        <li>Launch of the website presenting the team, vision, and roadmap.</li>
+        <li>Creation of graphic identity and project branding.</li>
+      </ul>
+      <p class="wp-text"><strong>Community animation:</strong></p>
+      <ul class="wp-list">
+        <li>Opening and management of official channels on X (Twitter), Telegram, and Discord.</li>
+        <li>Setting up initial community exchanges, FAQ, and newsletters.</li>
+      </ul>
+      <p class="wp-text"><strong>Documentation and transparency:</strong></p>
+      <ul class="wp-list">
+        <li>Publication of the whitepaper and detailed technical documentation.</li>
+      </ul>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">Phase 2: Presale (Seeds & Early Access) (Q1-Q4 2026)</div>
+      <p class="wp-text"><strong>Presale rollout (Seed):</strong></p>
+      <ul class="wp-list">
+        <li>Opening of the initial funding phase (Seed) reserved for companies and specialized Web3 investment funds.</li>
+        <li>Selection of the first partners and numismatic ambassadors.</li>
+      </ul>
+      <p class="wp-text"><strong>Strategic partnerships:</strong></p>
+      <ul class="wp-list">
+        <li>Formation of solid collaborations with experts, recognized numismatic institutions, and leading blockchain companies.</li>
+      </ul>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">Phase 3: ICO Launch (Q2 2026 - Q4 2026)</div>
+      <p class="wp-text"><strong>Start of the token presale:</strong></p>
+      <ul class="wp-list">
+        <li>Official launch of the public presale of the $NUVR token at $0.02.</li>
+        <li>Dynamic price evolution based on global purchase volume, with the integration of a graphic gauge to track the token price in real-time.</li>
+      </ul>
+      <p class="wp-text"><strong>Feature deployment:</strong></p>
+      <ul class="wp-list">
+        <li>Launch of the first tools for users (wallet connection and allocation dashboard).</li>
+        <li>Implementation of a light KYC process strictly adapted to regulatory compliance for utility tokens.</li>
+      </ul>
+      <p class="wp-text"><strong>Testing and feedback:</strong></p>
+      <ul class="wp-list">
+        <li>Active collection of community feedback for rapid iterations and interface corrections.</li>
+      </ul>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">Phase 4: Ecosystem Expansion (Q4 2026 - Q1 2027)</div>
+      <p class="wp-text"><strong>Official public offering of the $NUVR token - TGE:</strong></p>
+      <ul class="wp-list">
+        <li>Official Token Generation Event (TGE) on December 1, 2026 (or earlier if sold out).</li>
+        <li>Deployment of a dedicated platform for tokenized numismatic coins with an optimized hybrid UX/UI.</li>
+      </ul>
+      <p class="wp-text"><strong>Market opening:</strong></p>
+      <ul class="wp-list">
+        <li>Procedures for token listing on major centralized (CEX) and decentralized (DEX) exchanges.</li>
+        <li>Provision of integration solutions (APIs, SDK) for specialized partners.</li>
+      </ul>
+      <p class="wp-text"><strong>Partner project onboarding:</strong></p>
+      <ul class="wp-list">
+        <li>Relations and partnerships with insurance companies, secure logistics carriers, and appraisal firms.</li>
+        <li>Directly accessible complementary services: coin insurance, secure storage (freeports), and remote expertise.</li>
+      </ul>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">Phase 5: Consolidation & New Services (Q1 2027 - Q3 2027)</div>
+      <p class="wp-text"><strong>Creation of Numismatics VR NFTs:</strong></p>
+      <ul class="wp-list">
+        <li>Development and issuance of NFTs compatible with Virtual Reality (VR) headsets and glasses.</li>
+        <li>Development of an immersive virtual museum with 3D modeling and interactive tours.</li>
+      </ul>
+      <p class="wp-text"><strong>Optimized and scalable management:</strong></p>
+      <ul class="wp-list">
+        <li>Implementation of a high-performance internal secondary market and fractional ownership management.</li>
+        <li>Legal monitoring and continuous compliance surveillance for rapid regulatory adaptations.</li>
+      </ul>
+      <p class="wp-text"><strong>Assessment and next steps:</strong></p>
+      <ul class="wp-list">
+        <li>Publication of a detailed progress report and preparation of new development phases.</li>
+        <li>Strategic opening of the economic model to other categories of collectibles and new classes of real-world assets (RWA).</li>
+      </ul>
+    </div>
+
+    <div class="wp-section" style="text-align: center; border-top: 1px solid rgba(255, 213, 74, 0.1); padding-top: 30px;">
+      <div class="wp-title" style="color: #ffd54a;">Final Objective</div>
+      <p class="wp-text" style="text-align: center;">To enable the democratization and liquidity of collectible coins through blockchain, while guaranteeing security, transparency, and a seamless connection between the physical and digital worlds.</p>
+    </div>
+
+</div>

@@ -1,0 +1,143 @@
+<style>
+  .wp-container { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    background: #0f172a; 
+    padding: 50px; 
+    border-radius: 12px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4); 
+    border: 1px solid rgba(255,255,255,0.05); 
+  }
+  .wp-section { 
+    margin-bottom: 40px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+    padding-bottom: 30px; 
+  }
+  .wp-section:last-child { 
+    border-bottom: none; 
+    margin-bottom: 0; 
+  }
+  .wp-title { 
+    color: #ffd54a; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 22px; 
+    font-weight: 700; 
+    margin-bottom: 15px; 
+  }
+  .wp-text { 
+    color: #cbd5e1; 
+    font-size: 15px; 
+    line-height: 1.8; 
+    margin-bottom: 15px; 
+  }
+  .wp-list { 
+    color: #cbd5e1; 
+    font-size: 15px; 
+    line-height: 1.8; 
+    margin-bottom: 15px; 
+    padding-left: 20px; 
+  }
+  .wp-list li { 
+    margin-bottom: 8px; 
+  }
+</style>
+
+<div class="wp-container" style="font-family: 'Open Sans', sans-serif; color: #f1f5f9;">
+    
+    <div class="wp-section" style="text-align: center;">
+      <p class="wp-text" style="text-align: center; font-size: 16px;">Le projet NUMISVR adopte une stratégie de déploiement par phases, visant la sécurité, l'évolutivité et l'adoption progressive de la tokenisation des pièces de monnaie numismatiques, avec des étapes claires et des avantages tangibles à chaque étape.</p>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">Phase 1 : Fondations (T3 2025)</div>
+      <p class="wp-text"><strong>Lancement du site officiel et création de marque :</strong></p>
+      <ul class="wp-list">
+        <li>Lancement du site présentant l'équipe, la vision et la feuille de route.</li>
+        <li>Création de l'identité graphique et du branding du projet.</li>
+      </ul>
+      <p class="wp-text"><strong>Animation communautaire :</strong></p>
+      <ul class="wp-list">
+        <li>Ouverture et gestion des canaux officiels sur X (Twitter), Telegram et Discord.</li>
+        <li>Mise en place des premiers échanges communautaires, FAQ et newsletters.</li>
+      </ul>
+      <p class="wp-text"><strong>Documentation et transparence :</strong></p>
+      <ul class="wp-list">
+        <li>Publication du Livre Blanc (Whitepaper) et de la documentation technique détaillée.</li>
+      </ul>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">Phase 2 : Prévente (Seeds & Early Access) (T1-T4 2026)</div>
+      <p class="wp-text"><strong>Déploiement de la prévente (Seed) :</strong></p>
+      <ul class="wp-list">
+        <li>Ouverture de la phase de financement initiale (Seed) réservée aux entreprises et fonds d'investissement spécialisés dans la crypto-monnaie et le Web3.</li>
+        <li>Sélection des premiers partenaires et ambassadeurs influents dans la communauté numismatique.</li>
+      </ul>
+      <p class="wp-text"><strong>Partenariats stratégiques :</strong></p>
+      <ul class="wp-list">
+        <li>Formation de collaborations solides avec des experts, des institutions numismatiques reconnues et des entreprises leaders du secteur blockchain.</li>
+      </ul>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">Phase 3 : Lancement de l'ICO (T2 2026 - T4 2026)</div>
+      <p class="wp-text"><strong>Début de la prévente des jetons :</strong></p>
+      <ul class="wp-list">
+        <li>Lancement officiel de la prévente publique du jeton $NUVR au prix de 0,02 $.</li>
+        <li>Évolution dynamique du prix en fonction du volume d'achat global, avec l'intégration d'une jauge graphique pour suivre le prix du jeton en temps réel.</li>
+      </ul>
+      <p class="wp-text"><strong>Déploiement des fonctionnalités :</strong></p>
+      <ul class="wp-list">
+        <li>Lancement des premiers outils pour les utilisateurs (système de création de compte connecté directement au portefeuille).</li>
+        <li>Mise en place d'un processus KYC léger ("Light KYC"), strictement adapté à la conformité réglementaire pour les jetons utilitaires.</li>
+      </ul>
+      <p class="wp-text"><strong>Tests et retours :</strong></p>
+      <ul class="wp-list">
+        <li>Collecte active des retours de la communauté pour des itérations rapides et des corrections d'interface.</li>
+      </ul>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">Phase 4 : Expansion de l'Écosystème (T4 2026 - T1 2027)</div>
+      <p class="wp-text"><strong>Lancement officiel de l'offre au public du token $NUVR - TGE :</strong></p>
+      <ul class="wp-list">
+        <li>Date officielle de lancement du TGE : 1er décembre 2026 (ou avancée si tous les jetons alloués sont vendus avant).</li>
+        <li>Déploiement d'une plateforme dédiée aux pièces numismatiques tokenisées avec une interface utilisateur (UX/UI) optimisée.</li>
+      </ul>
+      <p class="wp-text"><strong>Ouverture au Marché :</strong></p>
+      <ul class="wp-list">
+        <li>Lancement des procédures d'inscription du jeton sur les principales bourses centralisées (CEX) et décentralisées (DEX).</li>
+        <li>Mise à disposition de solutions d'intégration (API et SDK) pour les partenaires spécialisés du secteur.</li>
+      </ul>
+      <p class="wp-text"><strong>Intégrations de projets partenaires :</strong></p>
+      <ul class="wp-list">
+        <li>Établissement de relations et de partenariats avec des compagnies d'assurance, des transporteurs logistiques sécurisés et des cabinets d'expertise numismatique.</li>
+        <li>Déploiement de services complémentaires directement accessibles : assurance des pièces physiques, stockage ultra-sécurisé (ports francs) et modules d'expertise à distance.</li>
+      </ul>
+    </div>
+
+    <div class="wp-section">
+      <div class="wp-title">Phase 5 : Consolidation & Nouveaux Services (T1 2027 - T3 2027)</div>
+      <p class="wp-text"><strong>Création de NFT Numismatics VR :</strong></p>
+      <ul class="wp-list">
+        <li>Développement et émission de NFT compatibles avec les casques et lunettes de Réalité Virtuelle (VR).</li>
+        <li>Développement d'un musée virtuel immersif complet pour exposer les pièces tokenisées.</li>
+      </ul>
+      <p class="wp-text"><strong>Gestion optimisée et scalable :</strong></p>
+      <ul class="wp-list">
+        <li>Mise en place d'un marché secondaire interne performant et gestion de la copropriété fractionnée.</li>
+        <li>Suivi juridique et veille de conformité continue pour des adaptations réglementaires rapides.</li>
+      </ul>
+      <p class="wp-text"><strong>Évaluation et prochaines étapes :</strong></p>
+      <ul class="wp-list">
+        <li>Publication d'un rapport d'avancement détaillé et préparation des nouvelles phases de développement de l'écosystème.</li>
+        <li>Ouverture stratégique du modèle économique à d'autres catégories d'objets de collection et de nouvelles classes d'actifs réels (RWA).</li>
+      </ul>
+    </div>
+
+    <div class="wp-section" style="text-align: center; border-top: 1px solid rgba(255, 213, 74, 0.1); padding-top: 30px;">
+      <div class="wp-title" style="color: #ffd54a;">Objectif Final</div>
+      <p class="wp-text" style="text-align: center;">Permettre la démocratisation et la liquidité des pièces de collection grâce à la blockchain, tout en garantissant la sécurité, la transparence et la connexion entre les mondes physique et numérique.</p>
+    </div>
+
+</div>
