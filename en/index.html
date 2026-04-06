@@ -452,6 +452,44 @@ l-3.7-5.1L35.7,33.1h8.1l12.3,17.2l3.7,5.1l16.6,23.4h-7.8L55.3,60.2z"></path></sv
                       <p>Sorry, the time is up.</p>
                     </div>
                   </div>
+                  <script>
+                  (function() {
+                    function updateCountdown() {
+                      var target = new Date("2026-11-30T23:15:54Z");
+                      var now = new Date();
+                      var diff = target - now;
+                      var msg = document.querySelector('.u-countdown-message');
+                      if (msg) msg.style.display = 'none';
+                      if (diff <= 0) return;
+                      var days = Math.floor(diff / (1000*60*60*24));
+                      var hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+                      var minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+                      var seconds = Math.floor((diff % (1000*60)) / 1000);
+                      var d = String(days).padStart(3,'0').split('');
+                      var h = String(hours).padStart(2,'0').split('');
+                      var m = String(minutes).padStart(2,'0').split('');
+                      var s = String(seconds).padStart(2,'0').split('');
+                      var dn = document.querySelectorAll('.u-countdown-counter-2 .u-countdown-number');
+                      var hn = document.querySelectorAll('.u-countdown-counter-3 .u-countdown-number');
+                      var mn = document.querySelectorAll('.u-countdown-counter-4 .u-countdown-number');
+                      var sn = document.querySelectorAll('.u-countdown-counter-5 .u-countdown-number');
+                      if(dn[0]) dn[0].innerText = d[0];
+                      if(dn[1]) dn[1].innerText = d[1];
+                      if(dn[2]) dn[2].innerText = d[2];
+                      if(hn[0]) hn[0].innerText = h[0];
+                      if(hn[1]) hn[1].innerText = h[1];
+                      if(mn[0]) mn[0].innerText = m[0];
+                      if(mn[1]) mn[1].innerText = m[1];
+                      if(sn[0]) sn[0].innerText = s[0];
+                      if(sn[1]) sn[1].innerText = s[1];
+                    }
+                    document.addEventListener('DOMContentLoaded', function() {
+                      updateCountdown();
+                      setInterval(updateCountdown, 1000);
+                    });
+                  })();
+                  </script>
+                  </div>
                   <a href="jupiter.html" data-page-id="13445831" class="u-border-2 u-border-custom-color-1 u-border-hover-custom-color-1 u-border-no-bottom u-border-no-left u-border-no-top u-btn u-button-style u-none u-text-active-white u-text-custom-color-1 u-text-hover-white u-btn-2" title="participate in the  ico">Participate in the ICO</a>
                   <a href="whitepapaer.html" data-page-id="55117922" class="u-border-2 u-border-custom-color-1 u-border-hover-custom-color-1 u-border-no-bottom u-border-no-left u-border-no-top u-btn u-button-style u-none u-text-active-white u-text-custom-color-1 u-text-hover-white u-btn-3" target="_blank" title="whitepapaer">WHITEPAPER</a>
                   <a href="jupiter.html" data-page-id="13445831" class="u-border-2 u-border-custom-color-1 u-border-hover-custom-color-1 u-border-no-bottom u-border-no-left u-border-no-top u-btn u-button-style u-none u-text-active-white u-text-custom-color-1 u-text-hover-white u-btn-4" title="buy">BUY</a>
